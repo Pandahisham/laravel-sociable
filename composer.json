@@ -1,0 +1,19 @@
+{
+    "name": "tshafer/laravel-sociable",
+    "require": {
+        "php": ">=5.5.9",
+        "tshafer/laravel-service-provider": "1.0.*@dev",
+        "illuminate/support": "5.1.*",
+        "laravel/socialite": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tshafer\\Sociable\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

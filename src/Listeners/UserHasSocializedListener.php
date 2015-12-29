@@ -37,17 +37,13 @@ class UserHasSocializedListener
         // check if the given model is already authenticated with the provider,
         // if not we will save the received profile data
         try {
-            $provider = $model->sociables()
-              ->where('provider', '=', $event->provider)
-              ->where('uid', '=', $profile->get('id'))
-              ->firstOrFail();
+            $provider = $model->sociables()->where('provider', '=', $event->provider)->where('uid', '=',
+                    $profile->get('id'))->firstOrFail();
         } catch (ModelNotFoundException $e) {
-            $provider = new Provider(
-              $profile->merge([
+            $provider = new Provider($profile->merge([
                 'uid'      => $profile->get('id'),
                 'provider' => $event->provider,
-              ])->toArray()
-            );
+            ])->toArray());
 
             $model->sociables()->save($provider);
         }

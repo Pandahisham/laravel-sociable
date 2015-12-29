@@ -6,7 +6,6 @@ use Tshafer\Sociable\Models\Provider;
 
 trait Sociable
 {
-
     /**
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */

@@ -1,13 +1,11 @@
 <?php
 
-
 namespace Tshafer\Sociable\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Provider extends Model
 {
-
     /**
      * The table associated with the model.
      *

@@ -9,7 +9,6 @@ use Laravel\Socialite\SocialiteServiceProvider;
 
 class ServiceProvider extends BaseProvider
 {
-
     /**
      * Bootstrap the application services.
      */

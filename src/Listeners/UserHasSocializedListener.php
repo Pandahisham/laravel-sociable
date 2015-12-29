@@ -10,7 +10,6 @@ use Illuminate\Support\Collection;
 
 class UserHasSocializedListener
 {
-
     /**
      * Handle the event.
      *
@@ -41,7 +40,7 @@ class UserHasSocializedListener
                     $profile->get('id'))->firstOrFail();
         } catch (ModelNotFoundException $e) {
             $provider = new Provider($profile->merge([
-                'uid'      => $profile->get('id'),
+                'uid' => $profile->get('id'),
                 'provider' => $event->provider,
             ])->toArray());
 

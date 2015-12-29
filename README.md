@@ -5,7 +5,7 @@
 First, pull in the package through Composer.
 
 ```js
-composer require tshafer/laravel-sociable:1.0.*@dev
+composer require tshafer/laravel-sociable
 ```
 
 And then, if using Laravel 5, include the service provider within `app/config/app.php`.

@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Tshafer\Sociable\Events;
 
 use App\Events\Event;
@@ -8,7 +7,6 @@ use Illuminate\Support\Collection;
 
 class UserHasSocialized
 {
-
     /** @var string */
     public $provider;
 

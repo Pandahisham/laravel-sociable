@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Tshafer\Sociable\Services;
 
 use Tshafer\Sociable\Events\UserHasSocialized;
@@ -9,7 +8,6 @@ use Laravel\Socialite\Contracts\Factory as Socialite;
 
 class Authenticator
 {
-
     /**
      * @var UserRepository
      */
@@ -50,7 +48,7 @@ class Authenticator
      */
     public function execute($hasCode)
     {
-        if ( ! $hasCode) {
+        if (!$hasCode) {
             return $this->getAuthorizationFirst();
         }
 
